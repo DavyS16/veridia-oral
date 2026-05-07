@@ -146,7 +146,6 @@ export default function StudentPage() {
           classMaterials: (assignment.classMaterialsText||"").slice(0,8000),
           professorGuidance: assignment.professorGuidance||"",
         },
-        firstMessage: `Hi! I'm Veridia. I'll be conducting your oral exam for ${assignment.assignmentTitle}. Before we start, could you confirm your Assigned Student Key?`,
       });
     } catch (err) { setError("Failed to connect. Check your microphone permissions and try again."); setStatus("ready"); vapiRef.current = null; }
   }
